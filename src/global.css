@@ -11,8 +11,18 @@ body {
   border-width: 0;
 }
 
-.main__container{
-  margin: auto auto;
-  margin-top: 4rem;
- 
+.wallet__section{
+  /* margin: auto auto; */
+  /* margin-top: 0rem; */
+  /* width: fit-content; */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .wallet__section {
+    
+    margin: auto auto;
+    margin-top: 2.55rem;
+    
+  }
 }
