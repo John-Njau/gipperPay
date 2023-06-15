@@ -1,11 +1,14 @@
 import { useCallback, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PayForProduct2 = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const unlockWallet = useCallback(() => {
+    navigate("/pay-for-product3");
     alert("unlockWallet");
-  }, []);
+  }, [navigate]);
 
   const toggleVisibility = useCallback(() => {
     setShowPassword((showPassword) => !showPassword);

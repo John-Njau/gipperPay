@@ -1,28 +1,35 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PayForProduct = () => {
+  const navigate = useNavigate();
 
   const saveReceipt = useCallback(() => {
-    alert("saveReceipt");
-  }, []);
-
+    navigate("/pay-for-product1");
+    // alert("saveReceipt");
+  }, [navigate]);
 
   return (
-    <div className="relative bg-white-10 w-full h-[73.25rem] overflow-hidden text-left text-[1.75rem] text-secondary-main font-px-body-text">
-      <div className="absolute top-[0rem] left-[0rem] bg-white w-[90rem] overflow-hidden flex flex-row py-[1.25rem] px-[2.5rem] box-border items-center justify-start gap-[1.25rem]">
-        <img
-          className="relative w-[2.5rem] h-[2.5rem]"
-          alt=""
-          src="/component-15.svg"
-        />
-        <div className="relative font-medium">Gipper Payment</div>
+    <div className="container  bg-white text-[1rem] text-secondary-main font-px-body-text ">
+      <div className="navbar__component flex-1 flex flex-row gap-4 ">
+        <div className=" top-[0rem] left-[0rem] bg-white overflow-hidden flex flex-row py-[1.25rem] px-[2.5rem] box-border items-center justify-start gap-[1.25rem]">
+          <img
+            className="relative w-[2.5rem] h-[2.5rem]"
+            alt=""
+            src="/component-15.svg"
+          />
+          <div className="relative font-medium">Gipper Payment</div>
+        </div>
+        <div>
+          <img
+            className=" top-[1.25rem] left-[75.5rem] w-[12.78rem] h-[2.5rem] cursor-pointer"
+            alt=""
+            src="/component-1.svg"
+          />
+        </div>
       </div>
-      <img
-        className="absolute top-[1.25rem] left-[75.5rem] w-[12.78rem] h-[2.5rem] cursor-pointer"
-        alt=""
-        src="/component-1.svg"
-      />
-      <div className="absolute top-[6.25rem] left-[22.44rem] rounded-xl bg-white w-[45.13rem] h-[43.94rem] flex flex-col p-[1.25rem] box-border items-center justify-start text-center text-[1rem]">
+
+      <div className="payment__card top-[6.25rem] left-[22.44rem] rounded-xl bg-white w-[45.13rem] h-[43.94rem] flex flex-col p-[1.25rem] box-border items-center justify-start text-center text-[1rem]">
         <div className="w-[24.69rem] flex flex-col items-center justify-start gap-[1.25rem]">
           <img
             className="relative w-[17.26rem] h-[10.31rem]"
@@ -82,10 +89,10 @@ const PayForProduct = () => {
               </div>
             </div>
           </div>
-          <div
-            className="rounded-8xs bg-primary-main h-[2.81rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-center gap-[0.63rem] cursor-pointer text-left text-white"
-          >
-            <div className="relative" onClick={saveReceipt}>Save Receipt</div>
+          <div className="rounded-8xs bg-primary-main h-[2.81rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-center gap-[0.63rem] cursor-pointer text-left text-white">
+            <div className="relative" onClick={saveReceipt}>
+              Save Receipt
+            </div>
             <img
               className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
               alt=""

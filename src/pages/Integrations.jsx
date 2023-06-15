@@ -282,7 +282,6 @@ const Integrations = () => {
                   <div
                     onClick={handleCopyMainSecretKey}
                     className="rounded-8xs bg-primary-main h-[2.81rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-center gap-[0.63rem] cursor-pointer text-white"
-                    // onClick={onComponent14Container1Click}
                   >
                     <div className="relative">Copy</div>
                     <img

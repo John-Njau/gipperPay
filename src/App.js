@@ -75,13 +75,14 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<PayForProduct />} />
-      <Route path="/pay-for-product" element={<PayForProduct1 />} />
-      <Route path="/pay-for-product1" element={<PayForProduct2 />} />
-      <Route path="/pay-for-product2" element={<PayForProduct3 />} />
-      <Route path="/pay-for-product3" element={<PayForProduct4 />} />
-      <Route path="/pay-for-product4" element={<PayForProduct5 />} />
-      <Route path="/integrations" element={<Integrations />} />
+       <Route path="" element={<Integrations />} />
+      <Route path="/pay-for-product" element={<PayForProduct />} />
+      <Route path="/pay-for-product1" element={<PayForProduct1 />} />
+      <Route path="/pay-for-product2" element={<PayForProduct2 />} />
+      <Route path="/pay-for-product3" element={<PayForProduct3 />} />
+      <Route path="/pay-for-product4" element={<PayForProduct4 />} />
+      <Route path="/pay-for-product5" element={<PayForProduct5 />} />
+     
     </Routes>
   );
 }

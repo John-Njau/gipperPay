@@ -30,3 +30,14 @@ body {
     
   }
 }
+
+
+.navbar__component{
+ display: flex;
+  justify-content: space-between;
+}
+
+.payment__card{
+
+  margin: auto;
+}

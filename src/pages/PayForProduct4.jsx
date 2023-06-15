@@ -1,9 +1,12 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PayForProduct4 = () => {
-  const onComponent1Click = useCallback(() => {
-    // Please sync "Landing Page" to the project
-  }, []);
+  const navigate = useNavigate();
+
+  const connectWallet = useCallback(() => {
+    navigate("/pay-for-product5");
+  }, [navigate]);
 
   return (
     <div className="relative bg-white-10 w-full h-[73.25rem] overflow-hidden text-left text-[1.75rem] text-secondary-main font-px-body-text">
@@ -19,7 +22,7 @@ const PayForProduct4 = () => {
         className="absolute top-[1.25rem] left-[75.5rem] w-[12.78rem] h-[2.5rem] cursor-pointer"
         alt=""
         src="/component-1.svg"
-        onClick={onComponent1Click}
+        
       />
       <div className="absolute top-[6.25rem] left-[20.56rem] rounded-xl bg-white w-[45.13rem] h-[38.69rem] flex flex-col p-[3.75rem] box-border items-center justify-start gap-[1.25rem] text-[1.19rem]">
         <div className="flex flex-col items-center justify-center gap-[2.5rem]">
@@ -59,7 +62,7 @@ const PayForProduct4 = () => {
               alt=""
               src="/mdiwalletaddoutline.svg"
             />
-            <div className="relative">Connect Wallet</div>
+            <div className="relative" onClick={connectWallet}>Connect Wallet</div>
           </div>
         </div>
       </div>

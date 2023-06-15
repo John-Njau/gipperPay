@@ -1,9 +1,15 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PayForProduct3 = () => {
-  const onComponent1Click = useCallback(() => {
     // Please sync "Landing Page" to the project
-  }, []);
+
+  const navigate = useNavigate();
+
+  const nextPage = useCallback(() => {
+    navigate("/pay-for-product4");
+    // alert("nextPage");
+  }, [navigate]);
 
   return (
     <div className="relative bg-white-10 w-full h-[73.25rem] overflow-hidden text-left text-[1.19rem] text-secondary-main font-px-body-text">
@@ -19,7 +25,6 @@ const PayForProduct3 = () => {
         className="absolute top-[1.25rem] left-[75.5rem] w-[12.78rem] h-[2.5rem] cursor-pointer"
         alt=""
         src="/component-1.svg"
-        onClick={onComponent1Click}
       />
       <div className="absolute top-[6.25rem] left-[20.56rem] rounded-xl bg-white w-[45.13rem] h-[38.69rem] flex flex-col p-[3.75rem] box-border items-center justify-start gap-[1.25rem]">
         <div className="flex flex-col items-center justify-center gap-[2.5rem]">
@@ -127,8 +132,13 @@ const PayForProduct3 = () => {
                 <div className="relative">Connect</div>
               </div>
             </div>
+
+            
           </div>
         </div>
+        <div className="rounded-3xs bg-white-10 w-[9.38rem] flex flex-col py-[0.63rem] px-[1.25rem] box-border items-center justify-center gap-[1.25rem]" onClick={nextPage}  >
+              Next Page
+              </div>
       </div>
     </div>
   );

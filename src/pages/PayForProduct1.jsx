@@ -1,17 +1,19 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PayForProduct1 = () => {
-  const onComponent1Click = useCallback(() => {
-    // Please sync "Landing Page" to the project
-  }, []);
+  const navigate = useNavigate();
+
+
 
   const deleteWallet = useCallback(() => {
     alert("deleteWallet");
   }, []);
 
   const handleSubmit = useCallback(() => {
+    navigate("/pay-for-product2");
     alert("handleSubmit");
-  }, []);
+  }, [navigate]);
 
   const handleClose = useCallback(() => {
     alert("Close");
@@ -34,7 +36,6 @@ const PayForProduct1 = () => {
         className="top-[1.25rem] left-auto w-[12.78rem] h-[2.5rem] cursor-pointer"
         alt=""
         src="/component-1.svg"
-        onClick={onComponent1Click}
       />
       <div className="absolute top-[6.25rem] left-[22.44rem] rounded-xl bg-white w-[50%] h-[35rem] flex flex-col p-[1.25rem] box-border items-center justify-start gap-[1.25rem] text-[1.19rem]">
         <div className="flex flex-row justify-between">
