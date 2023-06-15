@@ -11,6 +11,10 @@ body {
   border-width: 0;
 }
 
+/* .main__container {
+ display: flex;
+} */
+
 .wallet__section{
   /* margin: auto auto; */
   /* margin-top: 0rem; */
