@@ -1,9 +1,7 @@
 import { useCallback } from "react";
 
 const PayForProduct5 = () => {
-  const onComponent1Click = useCallback(() => {
-    // Please sync "Landing Page" to the project
-  }, []);
+
 
   return (
     <div className="relative bg-white-10 w-full h-[73.25rem] overflow-hidden text-left text-[1.75rem] text-secondary-main font-px-body-text">
@@ -19,7 +17,6 @@ const PayForProduct5 = () => {
         className="absolute top-[1.25rem] left-[75.5rem] w-[12.78rem] h-[2.5rem] cursor-pointer"
         alt=""
         src="/component-1.svg"
-        onClick={onComponent1Click}
       />
       <div className="absolute top-[6.25rem] left-[14.63rem] rounded-xl bg-white w-[60.75rem] h-[38.69rem] flex flex-col items-center justify-center gap-[2.5rem] text-[1rem] text-white-30">
         <div className="flex flex-col items-center justify-start gap-[0.31rem]">

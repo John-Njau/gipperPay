@@ -11,6 +11,11 @@ import PayForProduct3 from "./pages/PayForProduct3";
 import PayForProduct4 from "./pages/PayForProduct4";
 import PayForProduct5 from "./pages/PayForProduct5";
 import Integrations from "./pages/Integrations";
+import SendAndReceive from "./pages/sendAndReceive";
+import ConfirmPin from "./pages/ConfirmPin";
+import ChooseANetworkForThisTran from "./pages/ChooseANetworkForThisTran";
+
+
 import { useEffect } from "react";
 
 function App() {
@@ -57,6 +62,18 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/send-and-receive":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/confirm-pin":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/choose-a-network":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -82,6 +99,9 @@ function App() {
       <Route path="/pay-for-product3" element={<PayForProduct3 />} />
       <Route path="/pay-for-product4" element={<PayForProduct4 />} />
       <Route path="/pay-for-product5" element={<PayForProduct5 />} />
+      <Route path="/send-and-receive" element={<SendAndReceive />} />
+      <Route path="/confirm-pin" element={<ConfirmPin />} />
+      <Route path="/choose-a-network" element={<ChooseANetworkForThisTran />} />
      
     </Routes>
   );

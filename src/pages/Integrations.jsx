@@ -80,120 +80,104 @@ const Integrations = () => {
       <div className="main__container flex flex-row bg-white text-[1rem] text-secondary-main font-px-body-text ">
         {/* Main section - Developer */}
         <div className="basis-1/4">
-        
-        <div className="absolute top-[0rem] left-[0rem] bg-white-10 w-[16.88rem] h-[73.25rem] text-white-30">
-        <div className="absolute top-[6.25rem] left-[2.06rem] flex flex-col items-start justify-start gap-[1.25rem]">
-          <div
-            className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-start gap-[0.63rem] cursor-pointer"
-          >
-            <img
-              className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-              alt=""
-              src="/pajamasoverview.svg"
-            />
-            <div className="relative">Overview</div>
-          </div>
-          <div
-            className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer"
-          >
-            <img
-              className="relative w-[0.95rem] h-[1.25rem]"
-              alt=""
-              src="/vector4.svg"
-            />
-            <div className="relative inline-block w-[7.94rem] shrink-0">{`Buy & Sell `}</div>
-          </div>
-          <div
-            className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer"
-          >
-            <img
-              className="relative w-[0.84rem] h-[1.25rem]"
-              alt=""
-              src="/group-2.svg"
-            />
-            <div className="relative inline-block w-[7.94rem] shrink-0">
-              Gipperfi
+          <div className="absolute top-[0rem] left-[0rem] bg-white-10 w-[16.88rem] h-[73.25rem] text-white-30">
+            <div className="absolute top-[6.25rem] left-[2.06rem] flex flex-col items-start justify-start gap-[1.25rem]">
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-start gap-[0.63rem] cursor-pointer">
+                <img
+                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
+                  alt=""
+                  src="/pajamasoverview.svg"
+                />
+                <div className="relative">Overview</div>
+              </div>
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer">
+                <img
+                  className="relative w-[0.95rem] h-[1.25rem]"
+                  alt=""
+                  src="/vector4.svg"
+                />
+                <div className="relative inline-block w-[7.94rem] shrink-0">{`Buy & Sell `}</div>
+              </div>
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer">
+                <img
+                  className="relative w-[0.84rem] h-[1.25rem]"
+                  alt=""
+                  src="/group-2.svg"
+                />
+                <div className="relative inline-block w-[7.94rem] shrink-0">
+                  Gipperfi
+                </div>
+              </div>
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer">
+                <img
+                  className="relative w-[0.91rem] h-[1.25rem]"
+                  alt=""
+                  src="/group-14.svg"
+                />
+                <div className="relative inline-block w-[8rem] shrink-0">
+                  Donations
+                </div>
+              </div>
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer">
+                <img
+                  className="relative w-[1.3rem] h-[1.25rem] overflow-hidden shrink-0"
+                  alt=""
+                  src="/fluentpeoplequeue24filled.svg"
+                />
+                <div className="relative inline-block w-[7.94rem] shrink-0">
+                  Payroll
+                </div>
+              </div>
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between">
+                <img
+                  className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
+                  alt=""
+                  src="/mdishopoutline.svg"
+                />
+                <div className="relative inline-block w-[7.94rem] shrink-0">
+                  Products
+                </div>
+              </div>
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between">
+                <img
+                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
+                  alt=""
+                  src="/materialsymbolsreceiptlong.svg"
+                />
+                <div className="relative inline-block w-[7.94rem] shrink-0">
+                  Transactions
+                </div>
+              </div>
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer">
+                <img
+                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
+                  alt=""
+                  src="/materialsymbolssettingsrounded.svg"
+                />
+                <div className="relative inline-block w-[7.94rem] shrink-0">
+                  Settings
+                </div>
+              </div>
+              <div className="self-stretch relative box-border h-[0.06rem] border-t-[1px] border-solid border-white-20" />
+              <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between text-primary-main">
+                <img
+                  className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
+                  alt=""
+                  src="/mdiintegratedcircuit.svg"
+                />
+                <div className="relative inline-block w-[7.94rem] shrink-0">
+                  Developers
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer"
-          >
             <img
-              className="relative w-[0.91rem] h-[1.25rem]"
+              className="absolute top-[1.25rem] left-[2.06rem] w-[12.78rem] h-[2.5rem]"
               alt=""
-              src="/group-14.svg"
+              src="/component-1.svg"
             />
-            <div className="relative inline-block w-[8rem] shrink-0">
-              Donations
-            </div>
-          </div>
-          <div
-            className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer"
-          >
-            <img
-              className="relative w-[1.3rem] h-[1.25rem] overflow-hidden shrink-0"
-              alt=""
-              src="/fluentpeoplequeue24filled.svg"
-            />
-            <div className="relative inline-block w-[7.94rem] shrink-0">
-              Payroll
-            </div>
-          </div>
-          <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between">
-            <img
-              className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
-              alt=""
-              src="/mdishopoutline.svg"
-            />
-            <div className="relative inline-block w-[7.94rem] shrink-0">
-              Products
-            </div>
-          </div>
-          <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between">
-            <img
-              className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-              alt=""
-              src="/materialsymbolsreceiptlong.svg"
-            />
-            <div className="relative inline-block w-[7.94rem] shrink-0">
-              Transactions
-            </div>
-          </div>
-          <div
-            className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between cursor-pointer"
-          >
-            <img
-              className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-              alt=""
-              src="/materialsymbolssettingsrounded.svg"
-            />
-            <div className="relative inline-block w-[7.94rem] shrink-0">
-              Settings
-            </div>
-          </div>
-          <div className="self-stretch relative box-border h-[0.06rem] border-t-[1px] border-solid border-white-20" />
-          <div className="rounded-xl w-[12.5rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-between text-primary-main">
-            <img
-              className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-              alt=""
-              src="/mdiintegratedcircuit.svg"
-            />
-            <div className="relative inline-block w-[7.94rem] shrink-0">
-              Developers
-            </div>
           </div>
         </div>
-        <img
-          className="absolute top-[1.25rem] left-[2.06rem] w-[12.78rem] h-[2.5rem]"
-          alt=""
-          src="/component-1.svg"
-        />
-      </div>
-         
-        </div>
-    
-    
-        
+
         <div className="basis-1/2 developer__section m-[1.25rem]">
           <div className="top-0 left-0 bg-white w-full flex flex-row py-[1.25rem] px-[2.5rem] box-border items-center justify-between text-center text-white">
             <div className="rounded-8xs bg-secondary-main h-[2.5rem] overflow-hidden flex flex-col py-[0.63rem] px-[1.56rem] box-border items-center justify-center">
