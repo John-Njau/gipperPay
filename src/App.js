@@ -12,7 +12,6 @@ import PayForProduct4 from "./pages/PayForProduct4";
 import PayForProduct5 from "./pages/PayForProduct5";
 import Integrations from "./pages/Integrations";
 import SendAndReceive from "./pages/sendAndReceive";
-import ConfirmPin from "./pages/ConfirmPin";
 import ChooseANetworkForThisTran from "./pages/ChooseANetworkForThisTran";
 
 
@@ -66,10 +65,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/confirm-pin":
-        title = "";
-        metaDescription = "";
-        break;
       case "/choose-a-network":
         title = "";
         metaDescription = "";
@@ -100,7 +95,6 @@ function App() {
       <Route path="/pay-for-product4" element={<PayForProduct4 />} />
       <Route path="/pay-for-product5" element={<PayForProduct5 />} />
       <Route path="/send-and-receive" element={<SendAndReceive />} />
-      <Route path="/confirm-pin" element={<ConfirmPin />} />
       <Route path="/choose-a-network" element={<ChooseANetworkForThisTran />} />
      
     </Routes>

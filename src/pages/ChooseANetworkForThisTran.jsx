@@ -1,13 +1,22 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import Sidebar from "../components/Sidebar";
+import ConfirmPin from "../components/ConfirmPin";
+import ReactModal from "react-modal";
 
 const ChooseANetworkForThisTran = () => {
+  const [isConfirmPinOpen, setIsConfirmPinOpen] = useState(false);
+
   const onBackButtonClick = useCallback(() => {
     alert("Back button clicked");
   }, []);
 
-  const confirmNetworkBtn = useCallback(() => {
-    alert("Confirm Network button clicked");
+  const openConfirmPinModal = useCallback(() => {
+    setIsConfirmPinOpen(true);
+    alert("Confirm Pin Modal opened");
+  }, []);
+
+  const closeConfirmPinModal = useCallback(() => {
+    setIsConfirmPinOpen(false);
   }, []);
 
   return (
@@ -101,7 +110,7 @@ const ChooseANetworkForThisTran = () => {
                 </div>
               </div>
 
-              <div className="box-border w-[18.75rem] flex flex-col py-[0.63rem] px-[0rem] items-start justify-start gap-[0.63rem] text-[0.81rem] border-t-[1px] border-dashed border-white-30">
+              <div className=" w-[18.75rem] flex flex-col py-[0.63rem] px-[0rem] items-start justify-start gap-[0.63rem] text-[0.81rem] border-t-[1px] border-dashed border-white-30">
                 <div className="self-stretch flex flex-row items-center justify-between">
                   <div className="relative">Exchange Rate</div>
                   <div className="flex flex-row items-start justify-center gap-[0.63rem]">
@@ -129,11 +138,17 @@ const ChooseANetworkForThisTran = () => {
               </div>
             </div>
             <div
-              onClick={confirmNetworkBtn}
+              onClick={openConfirmPinModal}
               className="rounded-8xs bg-primary-main w-[12.5rem] h-[2.81rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-center cursor-pointer text-white"
             >
               <div className="relative">Confirm</div>
             </div>
+            <ReactModal className="flex justify-center items-center "
+              isOpen={isConfirmPinOpen}
+              onRequestClose={closeConfirmPinModal}
+            >
+              <ConfirmPin />
+            </ReactModal>
           </div>
         </div>
 
