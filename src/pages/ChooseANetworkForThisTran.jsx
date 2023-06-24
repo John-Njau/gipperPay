@@ -3,8 +3,11 @@ import Sidebar from "../components/Sidebar";
 
 const ChooseANetworkForThisTran = () => {
   const onBackButtonClick = useCallback(() => {
-    // use navigate to go back to the previous page
     alert("Back button clicked");
+  }, []);
+
+  const confirmNetworkBtn = useCallback(() => {
+    alert("Confirm Network button clicked");
   }, []);
 
   return (
@@ -27,12 +30,12 @@ const ChooseANetworkForThisTran = () => {
 
       <div className="card__container bg-[#F7F7F7] ">
         <div className="card__content__section bg-[#FcFcFc]  w-[36rem] h-[45rem] ">
-          <div className="absolute h-[68.33%] w-[52.08%] top-[13.47%] right-[23.96%] bottom-[18.19%] left-[23.96%] flex flex-col items-center justify-start gap-[2.44rem]">
+          <div className="h-[68.33%] w-[52.08%] top-[13.47%] right-[23.96%] bottom-[18.19%] left-[23.96%] p-[2rem] flex flex-col items-center justify-start gap-[2.44rem]">
             <div className="flex flex-col items-start justify-start gap-[2.5rem]">
               <div className="w-[18.75rem] flex flex-col items-start justify-start text-secondary-main">
                 <div className="relative font-medium">Choose Network</div>
                 <div className="relative text-[0.81rem] text-white-30 inline-block w-[14.19rem]">
-                  Sellect Network for this transaction
+                  Select Network for this transaction
                 </div>
               </div>
               <img
@@ -46,7 +49,7 @@ const ChooseANetworkForThisTran = () => {
                   <div className="rounded-8xs flex flex-row items-center justify-center gap-[0.31rem]">
                     <div className="relative w-[1.14rem] h-[1.25rem]">
                       <img
-                        className="absolute h-[83.33%] w-full top-[10.41%] right-[0%] bottom-[6.26%] left-[0%] max-w-full overflow-hidden max-h-full"
+                        className="absolute h-[83.33%] w-full top-[10.41%] right-[0%] bottom-[6.26%] left-[0%] max-w-full max-h-full"
                         alt=""
                         src="/vector.svg"
                       />
@@ -55,76 +58,49 @@ const ChooseANetworkForThisTran = () => {
                     </div>
                     <div className="relative">GU$T</div>
                   </div>
-                  <div className="relative text-[1rem] font-medium text-secondary-main">{`0.00 `}</div>
+                  <input
+                    className="relative  font-px-body-text font-bold text-[0.81rem] bg-white rounded-8xs w-[2rem] shrink-0 flex flex-row p-[0.63rem] items-center justify-start"
+                    placeholder="0.00"
+                  />
                 </div>
               </div>
               <div className="flex flex-col items-start justify-start gap-[0.63rem]">
                 <div className="relative text-[0.81rem] font-medium text-secondary-main">
-                  Choose Neetwork
+                  Choose Network
                 </div>
-                <div className="w-[18.75rem] flex flex-row p-[0.63rem] box-border items-center justify-between">
-                  <div className="flex flex-row items-center justify-start gap-[0.63rem]">
-                    <img
-                      className="relative w-[1.25rem] h-[1.25rem] object-cover"
-                      alt=""
-                      src="/image-351@2x.png"
-                    />
-                    <div className="relative">Tron Network (TRC20)</div>
-                  </div>
-                  <img
-                    className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-                    alt=""
-                    src="/fluentradiobutton24filled.svg"
-                  />
-                </div>
-                <div className="w-[18.75rem] flex flex-row p-[0.63rem] box-border items-center justify-between">
-                  <div className="flex flex-row items-center justify-start gap-[0.63rem]">
-                    <img
-                      className="relative w-[1.25rem] h-[1.25rem] object-cover"
-                      alt=""
-                      src="/image-36@2x.png"
-                    />
-                    <div className="relative">
-                      Binance Smart Chain - (BEP20)
+                <div className="w-[18.75rem] flex flex-col gap-[0.63rem]">
+                  <label className="flex items-center justify-between">
+                    <div className="flex flex-row items-center justify-start gap-[0.63rem]">
+                      <img
+                        className="relative w-[1.25rem] h-[1.25rem] object-cover"
+                        alt=""
+                        src="/image-351@2x.png"
+                      />
+                      <div className="relative">Tron Network (TRC20)</div>
                     </div>
-                  </div>
-                  <img
-                    className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-                    alt=""
-                    src="/fluentradiobutton24filled.svg"
-                  />
+                    <input
+                      type="radio"
+                      name="network"
+                      value="tron"
+                      className="text-[#fcfcfc] rounded-full border "
+                    />
+                  </label>
+                  <label className="flex items-center justify-between">
+                    <div className="flex flex-row items-center justify-start gap-[0.63rem]">
+                      <img
+                        className="relative w-[1.25rem] h-[1.25rem] object-cover"
+                        alt=""
+                        src="/image-36@2x.png"
+                      />
+                      <div className="relative">
+                        Binance Smart Chain - (BEP20)
+                      </div>
+                    </div>
+                    <input type="radio" name="network" value="binance" />
+                  </label>
                 </div>
               </div>
-              <div className="relative hidden w-[19.56rem]">
-                Choose another coin to Sell
-              </div>
-              <div className="hidden flex-col items-start justify-start gap-[0.31rem] text-[0.81rem]">
-                <div className="relative font-medium text-secondary-main">
-                  Select Coin
-                </div>
-                <div className="rounded-8xs bg-white box-border w-[18.75rem] h-[3.13rem] overflow-hidden shrink-0 flex flex-row py-[0.63rem] px-[1.25rem] items-center justify-start gap-[0.63rem] border-[1px] border-solid border-secondary-20">
-                  <img
-                    className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-                    alt=""
-                    src="/usdt.svg"
-                  />
-                  <div className="flex-1 relative">USDT</div>
-                  <img
-                    className="relative w-[1rem] h-[1rem] hidden"
-                    alt=""
-                    src="/help-icon.svg"
-                  />
-                  <img
-                    className="relative w-[1.25rem] h-[1.25rem]"
-                    alt=""
-                    src="/group-7389.svg"
-                  />
-                </div>
-                <div className="relative text-[0.69rem] text-right">
-                  <span>Avaliable Balance:</span>
-                  <span className="font-medium"> 0 BTC</span>
-                </div>
-              </div>
+
               <div className="box-border w-[18.75rem] flex flex-col py-[0.63rem] px-[0rem] items-start justify-start gap-[0.63rem] text-[0.81rem] border-t-[1px] border-dashed border-white-30">
                 <div className="self-stretch flex flex-row items-center justify-between">
                   <div className="relative">Exchange Rate</div>
@@ -152,7 +128,10 @@ const ChooseANetworkForThisTran = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-8xs bg-primary-main w-[12.5rem] h-[2.81rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-center cursor-pointer text-white">
+            <div
+              onClick={confirmNetworkBtn}
+              className="rounded-8xs bg-primary-main w-[12.5rem] h-[2.81rem] flex flex-row py-[0.63rem] px-[1.25rem] box-border items-center justify-center cursor-pointer text-white"
+            >
               <div className="relative">Confirm</div>
             </div>
           </div>

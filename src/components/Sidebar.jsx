@@ -2,7 +2,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="bg-[#fcfcfc] top-[0rem] p-[0.5rem] w-[24.38rem] h-[73.25rem] text-[1.19rem]">
+    <div className="bg-[#fcfcfc] p-[2rem]  w-[24.38rem] h-[73.25rem] text-[1.19rem]">
       <div className="absolute flex flex-col items-start justify-start gap-[1.25rem]">
         <div className="relative font-medium">Steps</div>
         <div className="flex flex-col items-start justify-start gap-[2.19rem] text-[1rem]">
